@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#home {
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.37);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 30px 10%;
+  text-decoration: none;
+}
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  justify-content: left;
+  border-radius: 15px;
+}
+.nav li a {
+  text-decoration: none;
+  color: #c5c5c5;
+  font-family: "Comfortaa", cursive;
+}
+.nav li {
+  display: inline-block;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+.nav li a:hover {
+  color: #3294f0;
+  text-decoration: underline;
+  transition: all 0.2s;
+}
+h1 {
+  padding-top: 30px;
+  color: rgb(233, 233, 233);
+  opacity: 0.8;
+  font-weight: 8px;
+  align-self: auto;
+  text-align: center;
+  font-family: "Fredoka", sans-serif;
+  padding-bottom: 20px;
+}
+nav {
+  height: 25;
+}
+h3 {
+  color: rgb(255, 255, 255);
+  font-weight: 0.15;
+  opacity: 0.8;
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+p {
+  color: rgb(230, 224, 224);
+  font-weight: 0.2;
+  opacity: 0.8;
+  align-self: auto;
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+}
+
+h2 {
+  color: #ffff;
+  font-weight: 0.2;
+  opacity: 0.8;
+}
+h4 {
+  color: rgb(230, 224, 224);
+  font-weight: 0.2;
+  opacity: 0.8;
+  align-self: auto;
+  text-align: center;
+}
+.bn5 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(213, 213, 213);
+  background: rgba(31, 31, 31, 0.296);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.bn5:before {
+  content: "";
+  background: linear-gradient(45deg, #8d8d8d, #5a5a5a, #1c1c1c, #000000, #1c1c1c, #5a5a5a, #8d8d8d);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn5:active {
+  color: #000;
+}
+
+.bn5:active:after {
+  background: transparent;
+}
+
+.bn5:hover:before {
+  opacity: 1;
+}
+
+.bn5:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #373737be;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
